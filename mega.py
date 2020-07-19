@@ -13,13 +13,26 @@ ___________________________________________________________
 \033[1;34;40m     |  \/  | ___  __ _   / \    |  _ \ _   _| \ | |
 \033[1;36;40m     | |\/| |/ _ \/ _` | / O \   | |_) | | | |  \| |
 \033[1;34;40m     | |  | |  __/ (_| |/ ___ \  |  _ <| |_| | |\  |
-\033[1;36;40m     |_|  |_|\___|\__, /_/   \_\ |_| \_\\____/|_| \_|
+\033[1;36;40m     |_|  |_|\___|\__, /_/   \_\ |_| \_\____/|_| \_|
 \033[1;34;40m                  |___/
-
-\033[1;35;40m      [+] Tool By ERROR KILLER REUPLODE BY MADU [+]
 \033[1;32;40m___________________________________________________________
 """
 print(name, "")
+import time,sys
+b="/-\|*1234»"
+n=" CODE BY MADU\n"
+
+for y in range(4):
+    for o in range(len(b)):
+        time.sleep(1/20)
+        sys.stdout.write("\r"+"\033[1;36m"+b[o])
+
+
+for p in range(len(n)): 
+    
+    time.sleep(.1)
+    sys.stdout.write("\033[1;33;40m"+n[p])
+    sys.stdout.flush() 
 
 
 try:
@@ -78,7 +91,7 @@ def main():
         resp = str(res)
         if resp == '<Response [204]>':
             print(bar)
-            print("\n\033[1;32;40m [+] No Data ... [+]")
+            print("\n\033[1;36;40m [+] No Data ... [+]")
             print(bar)  
         elif resp == '<Response [200]>':
             print(bar)
@@ -86,7 +99,7 @@ def main():
             print(bar)
         else:
             print(bar)
-            print("\n\033[1;31;40m [+] Check Again, I think You are Blocked User... [+]")
+            print("\n\033[1;31;40m [+] Check Again, I think You are Blocked User.../or network error [+]")
             print(bar)
         
 
