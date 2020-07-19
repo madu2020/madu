@@ -74,7 +74,7 @@ except ImportError:
 
 def main():
     os.system("clear")
-    print(name,"\n")
+    print(barg);print(name);print(barg)
     s = int(input("\033[1;0;40mEnter Amount - "))
     header = {"Host": "megarun.dialog.lk",
               "Authorization": auth, "X-Unity-Version": "2018.3.0f2"}
