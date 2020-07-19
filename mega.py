@@ -5,19 +5,17 @@ import os
 
 os.system('clear')
 
-bar = "\033[1;33;40m\n_________________________________________________\n"
-
-name = """\033[1;32;40m
-____________________________________________________
-\033[1;36;40m      
+barg = "\033[1;36;40m\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n"
+barr = "\033[1;31;40m\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n"
+barp = "\033[1;35;40m\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n"
+print(barp);name = """    
 \033[1;34;40m  ▓ ▓   ▓ ▓  ▓▓▓▓ ▓ ▓   ▓ ▓    ▓ ▓     ▓▓▓▓▓▓ 
 \033[1;36;40m  ▓  ▓▓   ▓  ▓  ▓ ▓  ▓▓   ▓   ▓   ▓    ▓    ▓
 \033[1;36;40m  ▓       ▓  ▓ ▓  ▓       ▓  ▓  ▓  ▓   ▓    ▓      
 \033[1;36;40m  ▓       ▓  ▓  ▓ ▓       ▓ ▓       ▓  ▓▓▓▓▓▓     
 
-____________________________________________________
 """
-print(name, "")
+print(name, "");print(barp)
 import time,sys
 b="/-*1234»"
 n=" CODE BY MADU\n"
@@ -31,7 +29,7 @@ for y in range(4):
 for p in range(len(n)): 
     
     time.sleep(.1)
-    sys.stdout.write("\033[1;33;40m"+n[p])
+    sys.stdout.write("\033[1;35;40m"+n[p])
     sys.stdout.flush() 
 
 
@@ -90,17 +88,17 @@ def main():
         res = requests.get(url, headers=header)
         resp = str(res)
         if resp == '<Response [204]>':
-            print(bar)
+            print(barr)
             print("\n\033[1;36;40m [+] No Data ... [+]")
-            print(bar)  
+            print(barr)  
         elif resp == '<Response [200]>':
-            print(bar)
+            print(barg)
             print("\n\033[1;32;40m [+] You Won Check Balance ... [+]")
-            print(bar)
+            print(barg)
         else:
-            print(bar)
+            print(barr)
             print("\n\033[1;31;40m [+] Check Again, I think You are Blocked User.../or network error [+]")
-            print(bar)
+            print(barr)
         
 
         ss+=1
