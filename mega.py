@@ -103,10 +103,12 @@ def main():
 
         ss+=1
         print("\033[1;0;40m\n",str(ss), "Please Wait For Next request",end="")
+        l=""
         for i in range(180):
-            
+            lo=lo+"|"
             pr = i/180*100
             print("\033[1;36;40m\n>>> [+]",str(int(pr)) +"% ",end="")
+            print(lo)
             
             time.sleep(0.5)
             sys.stdout.write("\033[F")
